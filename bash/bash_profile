@@ -1,0 +1,51 @@
+alias l='ls -lah'
+alias la='ls -hlap --color'
+alias ls='ls --color'
+alias ch='./configure --help'
+alias configure='configure --cache-file=/tmp/config.cache'
+alias e='mcedit'
+alias counter='wine --winver winxp -- hl.exe -console -game cstrike'
+alias OFF='/sbin/halt ; logout'
+alias Man='pinfo -m'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias v=vim
+
+complete -d cd
+complete -f e
+complete -f -X '*.o' vim
+complete -f mcedit
+complete -d mkdir
+#complete -f -X '*.tgz' installpkg
+#complete -f -X '*.tgz' upgradepkg
+#complete -f -X '*.tgz' removepkg
+#complete -f -X '*.tgz' explodepkg
+
+export PATH=$PATH:$HOME/bin
+export COLORTERM=1
+export EDITOR=vim
+export CVS_RSH=/usr/bin/ssh
+
+export LC_ALL="en_US.ISO8859-1"
+export LANG="en_US.ISO8859-1"
+export LC_CTYPE="en_US.ISO8859-1"
+export LC_NUMERIC="en_US.ISO8859-1"
+export LC_TIME="pt_BR"
+export LC_COLLATE="pt_BR"
+export LC_MONETARY="pt_BR"
+export LC_MESSAGES="en_US.ISO8859-1"
+export LC_PAPER="pt_BR"
+export LC_NAME="pt_BR"
+export LC_ADDRESS="pt_BR"
+export LC_TELEPHONE="pt_BR"
+export LC_MEASUREMENT="pt_BR"
+export LC_IDENTIFICATION="pt_BR"
+
+export G_FILENAME_ENCODING="@locale"
+export HISTCONTROL=ignoredups
+export HISTFILESIZE=10000
+
+PS1='\033[0;32m[\u@\h \033[1;32m\w\033[0;32m - \t]\033[0;37m\n\$ '
+
+history -a
+

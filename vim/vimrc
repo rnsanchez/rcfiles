@@ -1,0 +1,39 @@
+syntax on
+colors elflord
+set cin
+set noexpandtab
+set backspace=indent,eol,start
+set cpoptions=aABceFs
+set ul=1000
+set ruler
+set mouse=a
+
+set linebreak
+set showbreak=..
+
+"set backup
+"set backupcopy=yes,breakhardlink
+
+set backupskip=/tmp/*,svn-commit.tmp
+
+filetype plugin indent on
+
+map ,gcc :!gcc -Wall -o %< %
+
+imap ( ()<Left>
+imap [ []<Left>
+
+map <F2> :w<CR>
+imap <F2> <Esc>:w<CR>
+imap <F9> <Esc>:!make<CR>
+map <F9> :!make<CR>
+imap <F10> <Esc>:q<CR>
+map <F10> :q<CR>
+imap [24;5~ <C-R>=strftime("%Y-%m-%d")"<CR>
+imap <F12> <C-R>=strftime("%Y-%m-%d")"<CR>
+imap <C-F10> <Esc>:wq<CR>
+map <C-F10> :wq<CR>
+map <S-F2> :NERDTreeToggle<CR>
+
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/

@@ -1,0 +1,38 @@
+color dblue
+set cursorline
+set guioptions-=T
+syntax on
+set cin
+set noexpandtab
+"set guifont=-dec-terminal-medium-r-normal-*-*-140-*-*-c-*-iso8859-1
+set guifont=ProggyCleanTT\ 9
+set ul=1000
+set cpoptions=aABceFs
+set backspace=indent,eol,start
+set ruler
+"set backupcopy=yes,breakhardlink
+set nu
+
+set backupskip=/tmp/*,svn-commit.tmp
+
+filetype plugin indent on
+
+map ,gcc :!gcc -Wall -o %< %
+
+imap ( ()<Left>
+imap [ []<Left>
+
+map <F2> :w<CR>
+imap <F2> <Esc>:w<CR>
+imap <F9> <Esc>:!make<CR>
+map <F9> :!make<CR>
+imap <F10> <Esc>:q<CR>
+map <F10> :q<CR>
+imap <C-F12> <C-R>=strftime("%Y-%m-%d")"<CR>
+map <F12> zz
+
+"abbr \\bfig \\begin{figure}<CR><tab>\\begin{center}<tab><tab>\\includegraphics{}<CR><tab>\\end{center}<CR><tab>\\caption{}<CR><tab>\\label{}<CR>\\end{figure}
+
+highlight WhitespaceEOL guibg=#000077
+match WhitespaceEOL /\s\+$/
+

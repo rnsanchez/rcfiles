@@ -1,0 +1,63 @@
+#
+# Created: Dec 15, 2004.
+# Ricardo Nabinger Sanchez
+#
+
+set ellipsis
+set promptchars = "%#"
+set prompt = "%n@%m:%B%c03%b%# "
+set autolist
+set rmstar
+set printexitvalue
+set histfile = ~/.history
+set history = 5000
+set savehist = (5000 merge)
+set histdup erase
+set path = ($path ~/bin /usr/local/cuda/bin/)
+
+setenv PAGER "less -R"
+setenv EDITOR vim
+setenv LC_ALL en_US.ISO8859-1
+setenv CVS_RSH ssh
+setenv G_FILENAME_ENCODING @locale
+setenv LANG en_US.ISO8859-1
+setenv LC_ALL en_US.ISO8859-1
+setenv CVS_RSH /usr/bin/ssh
+
+# DevTodo stuff
+#alias cwdcmd devtodo --summary
+#devtodo --timeout --summary
+
+alias l		'ls --color -laFh '
+alias ls	'ls --color -F'
+alias lsa	'ls --color -aF'
+alias Man	'pinfo -m '
+alias view	'vim -R '
+
+alias svdiff	'svn diff | view -'
+alias cvdiff	'cvs diff | view -'
+
+#alias cgrep	'egrep \!* --color -n --include=*.cpp --include=*.c --include=*.hpp --include=*.h -r .'
+alias mank	'man \!* || man -k \!*'
+alias typescript 'script `date "+%Y%m%d-%H%M%S"`.log'
+
+# FreeBSD
+alias scvs cvs -d :pserver:anoncvs@anoncvs.FreeBSD.org:/home/ncvs
+alias pcvs cvs -d :pserver:anoncvs@anoncvs.FreeBSD.org:/home/pcvs
+
+# Quick dirs
+alias - 'cd -'
+alias .. 'cd ..'
+alias ... 'cd ../..'
+alias .... 'cd ../../..'
+alias ..... 'cd ../../../..'
+
+bindkey "^?"    delete-char
+bindkey "^[[~"  complete-word-fwd
+bindkey "^w"	backward-delete-word
+
+bindkey -k up history-search-backward
+bindkey -k down history-search-forward
+
+# X11:
+bindkey "^[[3~"	delete-char
