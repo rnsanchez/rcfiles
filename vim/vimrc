@@ -25,8 +25,6 @@ imap [ []<Left>
 
 map <F2> :w<CR>
 imap <F2> <Esc>:w<CR>
-imap <F9> <Esc>:!make<CR>
-map <F9> :!make<CR>
 imap <F10> <Esc>:q<CR>
 map <F10> :q<CR>
 imap [24;5~ <C-R>=strftime("%Y-%m-%d")"<CR>
