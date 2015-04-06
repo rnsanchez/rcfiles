@@ -33,7 +33,7 @@ imap [24;5~ <C-R>=strftime("%Y-%m-%d")"<CR>
 imap <F12> <C-R>=strftime("%Y-%m-%d")"<CR>
 imap <C-F10> <Esc>:wq<CR>
 map <C-F10> :wq<CR>
-map <S-F2> :NERDTreeToggle<CR>
+map <S-F2> <Esc>:NERDTreeToggle<CR>
 
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
