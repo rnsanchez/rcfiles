@@ -34,5 +34,12 @@ imap <C-F10> <Esc>:wq<CR>
 map <C-F10> :wq<CR>
 map <S-F2> <Esc>:NERDTreeToggle<CR>
 
+" Make sure to center screen upon navigating across search terms and
+" paragraphs.
+nnoremap N Nzz
+nnoremap n nzz
+nnoremap { {zz
+nnoremap } }zz
+
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
