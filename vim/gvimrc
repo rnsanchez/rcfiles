@@ -10,7 +10,6 @@ set ul=1000
 set cpoptions=aABceFs
 set backspace=indent,eol,start
 set ruler
-"set backupcopy=yes,breakhardlink
 set nu
 
 set backupskip=/tmp/*,svn-commit.tmp
