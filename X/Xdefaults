@@ -1,4 +1,4 @@
-xterm*Background:	black
+xterm*Background:		black
 xterm*colorMode:		1
 xterm*colorULMode:		1
 xterm*colorUL:			dodgerBlue
