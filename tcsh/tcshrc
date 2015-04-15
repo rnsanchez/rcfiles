@@ -23,6 +23,7 @@ setenv G_FILENAME_ENCODING @locale
 setenv LANG en_US.ISO8859-1
 setenv LC_ALL en_US.ISO8859-1
 setenv CVS_RSH /usr/bin/ssh
+setenv NNTPSERVER news.gmane.org
 
 # DevTodo stuff
 #alias cwdcmd devtodo --summary
