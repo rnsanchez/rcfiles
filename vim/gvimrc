@@ -11,6 +11,7 @@ set cpoptions=aABceFs
 set backspace=indent,eol,start
 set ruler
 set nu
+set tabpagemax=32
 
 set backupskip=/tmp/*,svn-commit.tmp
 
