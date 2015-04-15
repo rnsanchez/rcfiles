@@ -13,7 +13,7 @@ set histfile = ~/.history
 set history = 5000
 set savehist = (5000 merge)
 set histdup erase
-set path = ($path ~/bin /usr/local/cuda/bin/)
+set path = ($path ~/bin)
 
 setenv PAGER "less -R"
 setenv EDITOR vim
