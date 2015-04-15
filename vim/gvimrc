@@ -5,7 +5,7 @@ syntax on
 set cin
 set noexpandtab
 "set guifont=-dec-terminal-medium-r-normal-*-*-140-*-*-c-*-iso8859-1
-set guifont=ProggyCleanTT\ 9
+set guifont=ProggyCleanTT\ 12
 set ul=1000
 set cpoptions=aABceFs
 set backspace=indent,eol,start
