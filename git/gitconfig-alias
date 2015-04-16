@@ -1,0 +1,16 @@
+[alias]
+	a = apply
+	b = branch -v
+	ch = cherry-pick -x
+	cma = commit -a -v
+	c = commit -v
+	co = checkout
+	d = diff
+	f = fetch
+	l = log --stat
+	lp = log -p
+	lps = log -p --stat
+	mm = merge origin/master
+	pm = push origin master
+	s = status
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ $`echo $VAR` = \\\"$OLD\\\" ]]; then export $VAR=\\\"$NEW\\\"; fi\" $@; }; f "
