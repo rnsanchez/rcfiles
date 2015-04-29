@@ -34,6 +34,9 @@ imap <C-F10> <Esc>:wq<CR>
 map <C-F10> :wq<CR>
 map <S-F2> <Esc>:NERDTreeToggle<CR>
 
+" Remap a misspelt :wq.
+command Wq wq
+
 " Make sure to center screen upon navigating across search terms and
 " paragraphs.
 nnoremap N Nzz
