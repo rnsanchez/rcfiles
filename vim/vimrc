@@ -19,8 +19,6 @@ set backupskip=/tmp/*,svn-commit.tmp
 
 filetype plugin indent on
 
-map ,gcc :!gcc -Wall -o %< %
-
 imap ( ()<Left>
 imap [ []<Left>
 
