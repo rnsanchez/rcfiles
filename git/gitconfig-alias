@@ -2,6 +2,7 @@
 	a = apply
 	b = branch -v
 	ch = cherry-pick -x
+	chex = cherry-pick -x -e -Xpatience
 	cma = commit -a -v
 	c = commit -v
 	co = checkout
