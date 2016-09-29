@@ -48,5 +48,11 @@ nnoremap } }zz
 "--------------------
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
+if has("gui_running")
+	au BufRead,BufNewFile *.go set encoding=utf8
+else
+	au BufRead,BufNewFile *.go set encoding=utf8 termencoding=latin1
+endif
+
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
