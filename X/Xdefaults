@@ -7,7 +7,7 @@ xterm*cursorColor:              green2
 xterm*cutNewLine:               0
 xterm*dynamicColors:            1
 xterm*fastScroll:               1
-xterm*font:                     -dec-terminal-medium-r-*-*-*-*-*-*-*-*-iso8859-1
+xterm*font:                     -*-proggycleanttsz-medium-*-*-*-0-*-*-*-*-*-iso8859-1
 xterm*Foreground:               grey
 xterm*geometry:                 90x26
 xterm*internalBorder:           1
