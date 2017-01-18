@@ -3,7 +3,7 @@ xterm*colorMode:                1
 xterm*colorULMode:              1
 xterm*colorUL:                  dodgerBlue
 xterm*cursorBlink:              0
-xterm*cursorColor:              green2
+xterm*cursorColor:              Crimson
 xterm*cutNewLine:               0
 xterm*dynamicColors:            1
 xterm*fastScroll:               1
