@@ -1,5 +1,9 @@
 if status --is-login
-	set PATH $PATH ~/bin
+	set -x PATH $PATH ~/bin /usr/share/texmf/bin
+	set -x EDITOR vim
+	set -x PAGER "less -R"
+	set -x LANG "en_US"
+	set -x LC_MONETARY pt_BR
 	set -x HOST (/bin/hostname)
 end
 
