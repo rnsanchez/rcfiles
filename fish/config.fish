@@ -10,7 +10,3 @@ end
 function ... --description 'Move up to grandparent directory (alias)'
 	cd ../..
 end
-
-function - --description 'Change to last directory (alias)'
-	cd -
-end
