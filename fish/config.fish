@@ -1,5 +1,6 @@
 if status --is-login
 	set PATH $PATH ~/bin
+	set -x HOST (/bin/hostname)
 end
 
 function l --description 'List directory contents (alias)'
