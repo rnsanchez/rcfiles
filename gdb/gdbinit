@@ -1,0 +1,15 @@
+set prompt \033[0;33m(gdb) \033[0m
+
+define slon
+set scheduler-locking on
+end
+document slon
+Enables scheduler locking.
+end
+
+define sloff
+set scheduler-locking off
+end
+document sloff
+Disables scheduler locking.
+end
