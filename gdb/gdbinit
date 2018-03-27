@@ -2,6 +2,7 @@ set prompt \033[0;33m(gdb) \033[0m
 
 define slon
 set scheduler-locking on
+show scheduler-locking
 end
 document slon
 Enables scheduler locking.
@@ -9,6 +10,7 @@ end
 
 define sloff
 set scheduler-locking off
+show scheduler-locking
 end
 document sloff
 Disables scheduler locking.
