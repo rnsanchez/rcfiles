@@ -1,5 +1,17 @@
 set prompt \033[0;33m(gdb) \033[0m
 
+set style address foreground blue
+set style address intensity bold
+set style metadata foreground magenta
+
+define sdon
+set disassemble-next-line on
+show disassemble-next-line
+end
+document sdon
+Enables disassemble-next-line
+end
+
 define slon
 set scheduler-locking on
 show scheduler-locking
@@ -15,3 +27,10 @@ end
 document sloff
 Disables scheduler locking.
 end
+
+define nn
+next
+info locals
+end
+document nn
+Faz um next seguindo de info locals.
