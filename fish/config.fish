@@ -15,6 +15,7 @@ if status --is-login
 	set -x LC_TIME pt_BR
 
 	set -x INPUTRC /etc/inputrc
+	set -x MANSECT 1:2:3:4:5:6:7:8:9:0:n:l
 
 	set -x GOPATH ~/Go
 	set -x GOROOT /usr/lib64/go1.7/go
@@ -29,6 +30,7 @@ if status --is-login
 	set -x COLORTERM 1
 	set -x EDITOR vim
 	set -x PAGER "less -R"
+	set -x LESS -R
 	set -x HOST (/bin/hostname)
 
 	set -x G_BROKEN_FILENAMES 1
