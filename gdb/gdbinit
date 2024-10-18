@@ -1,8 +1,16 @@
+handle SIGPIPE pass nostop noprint
+
+handle SIGHUP pass nostop print
+
 set prompt \033[0;33m(gdb) \033[0m
 
 set style address foreground blue
 set style address intensity bold
 set style metadata foreground magenta
+set print array-indexes on
+set print pretty
+set pagination off
+set env ASAN_OPTIONS=abort_on_error=1
 
 define sdon
 set disassemble-next-line on
